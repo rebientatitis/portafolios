@@ -1,0 +1,63 @@
+/* Barra de navegación */
+.navbar-dd {
+    background: #0073e6;
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-dd ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-dd li {
+    position: relative;
+}
+
+.dd-button {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.dd-button:hover {
+    background: #005bb5;
+}
+
+.dd-content {
+    display: none;
+    position: absolute;
+    background: #fff;
+    min-width: 140px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.dd-content a {
+    color: #333;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+    border-radius: 4px;
+}
+
+.dd-content a:hover {
+    background: #0073e6;
+    color: #fff;
+}
+
+.navbar-dd li:hover .dd-content {
+    display: block;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head class="title">
+        <title>fabAZ.dev</title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="stylesheet" href="navbar.css" type="text/css">
+        <link rel="stylesheet" href="slider.css" type="text/css">
+        <link rel="stylesheet" href="comentarios.css" type="text/css">
+        <!-- Incluyendo los archivos de Slick -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    </head>
+    <body>
+        <div class="theme">
+            <script>
+                !function()
+                {try
+                    {var d=document.documentElement,
+                    c=d.classList;
+                    c.remove('dark');
+                var e=localStorage.getItem('theme');
+                if('system'===e||(!e&&true)){var t='(prefers-color-scheme: dark)',
+                    m=window.matchMedia(t);
+                if(m.media!==t||m.matches){d.style.colorScheme = 'dark';
+                    c.add('dark')
+                }
+                else{d.style.colorScheme = 'light';
+                    c.add('light')}
+                }
+                else if(e){c.add(e|| '')
+
+                }if(e==='light'||e==='dark')d.style.colorScheme=e}
+                catch(e){
+
+                }}()
+            </script>
+        </div>
+
+        <div id="banner">
+            <header id="logo">
+                <h1>FABIAN ARAYA ZARRICUETA</h1>
+                <span id="jobdesc">
+                    DESARROLLADOR
+                </span>
+            </header>
+            <div id="overlay"></div>
+        </div>
+
+        <nav class="navbar-dd">
+            <ul>
+                <li>
+                    <button class="dd-button">Lenguajes</button>
+                    <div class="dd-content">
+                        <a href="#">Python</a>
+                        <a href="#">Java</a>
+                        <a href="#">JavaScript</a>
+                        <a href="#">C#</a>
+                        <a href="#">SQL</a>
+                    </div>
+                </li>
+                <li><button class="dd-button" href="#Proyectos">Proyectos</button></li>
+                <li><button class="dd-button" href="#contacto">Contacto</button></li>
+                <li>           
+                    <button class="dd-button">Sobre mi</button>
+                    <div class="dd-content">
+                        <a href="https://www.linkedin.com/in/fabian-araya-zarricueta-a0286a339">linkedin</a>
+                        <a href="https://github.com/freygtr">Github</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- <nav class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img alt="C#" loading="lazy" class="icon" src="/images/csharp.svg" />
+                </div>
+                <div class="slide">
+                    <img alt="Java" loading="lazy" class="icon" src="/images/java.svg" />
+                </div>
+                <div class="slide">
+                    <img alt="JavaScript" loading="lazy" class="icon" src="/images/javascript.svg" />
+                </div>
+                <div class="slide">
+                    <img alt="Python" loading="lazy" class="icon" src="/images/python.svg" />
+                </div>
+                <div class="slide">
+                    <img alt="SQL" loading="lazy" class="icon" src="/images/sql.svg" />
+                </div>
+            </div>
+        </nav> -->
+
+        <section id="casilla">
+            <h2>Historia</h2>
+            <div class="contentH-container">
+                <div class="Historia">
+                    <p>Graduado de un liceo técnico especializado en áreas tecnológicas, titulado como técnico electricista. Actualmente curso la carrera de Analista Programador 
+                        en la institución Santo Tomás de Ovalle. Cuento con experiencia
+                        en análisis de datos, ingreso de información en sistemas y certificación en Cisco Academy, además de habilidades en el manejo de interfaces 
+                        gráficas de software en entornos Windows 7, 8, 10 y 11, con sólidos conocimientos en mantenimiento de equipos electrónicos de sobremesa.
+                    </p>
+                </div>
+                <div class="Historia">
+                    <p>Poseo una alta capacidad de adaptación al trabajo en equipo, así como habilidades para desenvolverme 
+                    en diferentes entornos y enfrentar nuevos desafíos. Me caracterizo por la dedicación, responsabilidad y 
+                    el compromiso con los principios éticos en el ámbito laboral. 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr />
+        
+        <section>
+            <h2>Proyectos</h2>
+            <div class="proyectos-container">
+                <div class="proyecto">
+                    <h3>Aplicacion de Insumos Electrónico</h3>
+                    <p>Estuve con un equipo de trabajo, en el desarrollo de una app para un cliente y su tienda de 
+                    electrónicos, la aplicacion fue desarrollada en el lenguaje de java para gestionar informacion como,
+                    stock, ventas, inventario, entre otros. se creo con una interfaz intuitiva y facil de usar para cualquier
+                    persona que no tenga conocimientos muy profundizados en la navegacion de una aplicacion gestora de datos.
+                    la app utiliza una base de datos en SQL para almacenar la informacion y poder gestionarla de manera mas eficiente.    
+                    </p>
+            <!-- Carrusel de imágenes -->
+                    <div class="slick-slider">
+                        <div><img src="images/proyecto.jpg" alt="CompuInsumos" class="imagen-proyecto"></div>
+                        <div><img src="images/proyecto2.jpg" alt="CompuInsumos 2" class="imagen-proyecto"></div>
+                        <div><img src="images/proyecto3.jpg" alt="CompuInsumos 3" class="imagen-proyecto"></div>
+                    </div>
+                </div>
+                </div>
+                <div class="proyecto">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción del proyecto 2.</p>
+                </div>
+                <div class="proyecto">
+                    <h3>Proyecto 3</h3>
+                    <p>Descripción del proyecto 3.</p>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function(){
+                    $('.slick-slider').slick({
+                        slidesToShow: 1,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 2000,
+                            arrows: false,
+                            dots: false,
+                            infinite: true,
+                            speed: 500,
+                            cssEase: 'linear',
+                    });
+                });
+                </script>
+                
+        </section>
+
+        <section id="Contacto">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
+    
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" required>
+    
+                <label for="message">Mensaje:</label>
+                <textarea id="message" required></textarea>
+    
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <section id="Comentarios">
+            <h2>Comentarios</h2>
+            <div class="Comentarios-container" id="Comentarios-container">
+                <!-- Aquí se cargarán automáticamente los comentarios -->
+            </div>
+    
+            <!-- Botón que muestra el formulario -->
+            <button id="toggle-comentarios">¿Quieres dejar un Comentario?</button>
+    
+            <!-- Formulario oculto -->
+            <div id="formulario-comentario" style="display: none;">
+            <form id="comentario-form">
+                <input type="text" id="autor" placeholder="Tu nombre" required />
+                <textarea id="contenido" placeholder="Deja tu comentario" required></textarea>
+                <button type="submit">Publicar</button>
+            </form>
+            <p id="mensaje-envio"></p>
+            </div>
+        </section>
+
+        <button id="scroll-top">↑</button>
+
+        <footer>
+            <p>&copy; 2025 FreyGTR - Todos los derechos reservados</p>
+        </footer>
+    
+        <script src="js/script.js"></script>
+    </body>
+</html>
